@@ -14,3 +14,4 @@ C:\Users\User\source\repos\11a_Souvenirs_Zadacha\11a_Souvenirs_Zadacha\obj\Debug
 C:\Users\User\source\repos\11a_Souvenirs_Zadacha\11a_Souvenirs_Zadacha\obj\Debug\11a_Souvenirs_Zadacha.exe
 C:\Users\User\source\repos\11a_Souvenirs_Zadacha\11a_Souvenirs_Zadacha\obj\Debug\11a_Souvenirs_Zadacha.pdb
 C:\Users\User\source\repos\11a_Souvenirs_Zadacha\11a_Souvenirs_Zadacha\obj\Debug\_11a_Souvenirs_Zadacha.Migrations.Migration1.resources
+C:\Users\User\source\repos\11a_Souvenirs_Zadacha\11a_Souvenirs_Zadacha\obj\Debug\11a_Souvenirs_Zadacha.csproj.AssemblyReference.cache

@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textbox_Id = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBox1_Type = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button_Add = new System.Windows.Forms.Button();
-            this.textBox_Name = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3_Description = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5_Price = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button_Update = new System.Windows.Forms.Button();
             this.button_Delete = new System.Windows.Forms.Button();
@@ -54,14 +54,15 @@
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textbox_Id
+            // textBox1
             // 
-            this.textbox_Id.Location = new System.Drawing.Point(47, 90);
-            this.textbox_Id.Name = "textbox_Id";
-            this.textbox_Id.Size = new System.Drawing.Size(100, 20);
-            this.textbox_Id.TabIndex = 1;
-            this.textbox_Id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Location = new System.Drawing.Point(47, 90);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // listBox1
             // 
@@ -72,14 +73,14 @@
             this.listBox1.TabIndex = 2;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // comboBox1_Type
+            // comboBox1
             // 
-            this.comboBox1_Type.FormattingEnabled = true;
-            this.comboBox1_Type.Location = new System.Drawing.Point(47, 294);
-            this.comboBox1_Type.Name = "comboBox1_Type";
-            this.comboBox1_Type.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1_Type.TabIndex = 3;
-            this.comboBox1_Type.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(47, 294);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button_Add
             // 
@@ -91,13 +92,13 @@
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox_Name
+            // textBox2
             // 
-            this.textBox_Name.Location = new System.Drawing.Point(47, 144);
-            this.textBox_Name.Name = "textBox_Name";
-            this.textBox_Name.Size = new System.Drawing.Size(100, 20);
-            this.textBox_Name.TabIndex = 6;
-            this.textBox_Name.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Location = new System.Drawing.Point(47, 144);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 6;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -107,14 +108,15 @@
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Name";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox3_Description
+            // textBox3
             // 
-            this.textBox3_Description.Location = new System.Drawing.Point(47, 193);
-            this.textBox3_Description.Name = "textBox3_Description";
-            this.textBox3_Description.Size = new System.Drawing.Size(100, 20);
-            this.textBox3_Description.TabIndex = 8;
-            this.textBox3_Description.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.Location = new System.Drawing.Point(47, 193);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 8;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -126,13 +128,13 @@
             this.label3.Text = "Description";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox5_Price
+            // textBox5
             // 
-            this.textBox5_Price.Location = new System.Drawing.Point(47, 243);
-            this.textBox5_Price.Name = "textBox5_Price";
-            this.textBox5_Price.Size = new System.Drawing.Size(100, 20);
-            this.textBox5_Price.TabIndex = 10;
-            this.textBox5_Price.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.Location = new System.Drawing.Point(47, 243);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 10;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label5
             // 
@@ -142,6 +144,7 @@
             this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Price";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button_Update
             // 
@@ -181,6 +184,7 @@
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 16;
             this.label4.Text = "Type";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button_Get
             // 
@@ -202,19 +206,20 @@
             this.Controls.Add(this.button_GetAll);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.button_Update);
-            this.Controls.Add(this.textBox5_Price);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3_Description);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox_Name);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button_Add);
-            this.Controls.Add(this.comboBox1_Type);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textbox_Id);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,15 +228,15 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textbox_Id;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox1_Type;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button_Add;
-        private System.Windows.Forms.TextBox textBox_Name;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3_Description;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5_Price;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button_Update;
         private System.Windows.Forms.Button button_Delete;
