@@ -125,9 +125,37 @@ namespace _11a_Souvenirs_Zadacha
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) //Delete button done
         {
+            int id = 0;
+            if (string.IsNullOrEmpty(textBox1.Text) || !textBox1.Text.All(char.IsDigit))
+            {
+                MessageBox.Show("Vuvedete element za triene!");
+                textBox1.BackColor = Color.Red;
+                return;
+            }
+            else
+            {
+                id = int.Parse(textBox1.Text);
+            }
+            Souvenir souvenir1 = souvenirController.Get(id);
+            if (string.IsNullOrEmpty(textBox2.Text))
+            {
+                if (souvenir1 == null)
+                {
+                    MessageBox.Show("Nqma takav product v bazata \n Vuvedete ID.");
+                    textBox1.BackColor = Color.Red;
+                    return;
+                }
+            }
+            LoadRecord(souvenir1);
 
+            DialogResult delete = MessageBox.Show("Iskate li da produljite s iztrivaneto?", "Delete", MessageBoxButtons.YesNo);
+            if (delete == DialogResult.Yes)
+            {
+                souvenirController.Delete(id);
+            }
+            button4_Click(sender, e);
         }
 
         private void button4_Click(object sender, EventArgs e) //GetAll Done
